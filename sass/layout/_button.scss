@@ -1,0 +1,113 @@
+// ..........BUTTON-MAIN...........
+.button-main {
+    padding: 10px 32px;
+    display: block;
+    margin: 0 auto;
+    background-color: var(--primari-accent-color);
+    color: var(--primari-team-color);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.62;
+    border: 0;
+    border-radius: 4px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+    background-color: var(--hover-btn-color);
+    color: var(--primari-white-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  }
+  
+    // ...........MODAL-CLOSE-BUTTON.........
+  .close-btn {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .close-btn-icon {
+    width: 11px;
+    height: 11px;
+    fill: var(--primari-tittle-color);
+    &:hover{
+        fill: #2196F3;
+      }
+  }
+   
+
+.btn-submit {
+    padding: 10px 55px;
+    display: block;
+    margin: 0 auto;
+    background-color: #2196f3;
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.87;
+    &:hover,
+    &:focus {
+    background-color: #188CE8;
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    }
+  }
+  
+//   ...............BUTTON-SECONDARY............
+.nav-class {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+.button-secondary {
+    padding: 6px 22px;
+    display: block;
+    margin-right: 8px;
+    background-color: #f5f4fa;
+    color: var(--primari-tittle-color);
+    border-radius: 4px;
+    border: 0;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.62;
+    &:hover,
+    &:focus {
+  background-color: var(--primari-accent-color);
+  color: var(--primari-team-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+  }
+   
+//   .btn {
+//     position: absolute;
+//     border: 1px solid rgba(0, 0, 0, 0.1);
+//     background-color: black;
+//     width: 15px;
+//     height: 15px;
+//     border-radius: 50%;
+//   }
+
+  

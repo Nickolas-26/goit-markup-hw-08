@@ -1,0 +1,28 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  ul,
+  p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  a,
+  u {
+    text-decoration: none;
+  }
+  
+  button {
+    cursor: pointer;
+  }
