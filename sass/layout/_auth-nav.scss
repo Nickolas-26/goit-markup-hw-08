@@ -9,6 +9,9 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: 50px;
+    @media screen and ( min-width: 480px){
+      display: none;
+    }
   }
   .auth-nav__icon {
     width: 16px;

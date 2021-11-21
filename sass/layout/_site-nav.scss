@@ -14,6 +14,9 @@
   }
   .nav-site {
     display: flex;
+    @media screen and ( min-width: 480px){
+      display: none;
+    }
   }
   .nav__site-item {
     font-weight: 500;

@@ -74,10 +74,12 @@
 //   ...............BUTTON-SECONDARY............
 .nav-class {
     @media screen and ( min-width: 480px){
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    margin-left: 15px;
   }
   @media screen and ( min-width: 768px){
       margin-bottom: 14px;
@@ -94,6 +96,7 @@
     padding: 6px 22px;
     display: block;
     margin-right: 8px;
+    margin-bottom: 15px;
     background-color: #f5f4fa;
     color: var(--primari-tittle-color);
     border-radius: 4px;
@@ -112,6 +115,6 @@
   color: var(--primari-team-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     }
-    
+    @media screen and ( min-width: 480px){}
 }
   

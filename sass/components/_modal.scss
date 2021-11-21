@@ -123,3 +123,49 @@
     }
   }
   
+
+  // .............modal mobile................
+  .icon-open{
+    width: 24px;
+    height: 16px;
+    background-color: #fff;
+  }
+  .icon-close{
+    width: 18px;
+    height: 18px;
+    fill: #2196F3;
+  }
+  .menu-toggle{
+    position: absolute;
+    right: 23px;
+    top: 22px;
+    border: none;
+    background-color: #fff;
+
+  }
+  .menu-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    transform: translateX(100%);
+  }
+  .menu-container.is-open{
+    transform: translateX(0);
+  }
+  .menu-list{
+    width: 480px;
+    height: 796px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+    padding-top: 48px;
+    padding-left: 40px;
+  }
+  .menu-item{
+    margin-bottom: 32px;
+    &:last-child{
+      margin-bottom: 306px;
+    }
+  }
