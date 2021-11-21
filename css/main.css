@@ -238,10 +238,12 @@ button {
   height: 100vh;
   z-index: 999;
   transform: translateX(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-container.is-open {
   transform: translateX(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-list {
@@ -254,11 +256,39 @@ button {
 }
 
 .menu-item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--primari-tittle-color);
   margin-bottom: 32px;
 }
 
 .menu-item:last-child {
   margin-bottom: 306px;
+}
+
+@media screen and (min-width: 481px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.auth-item {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: #2196F3;
+  margin-bottom: 20px;
+}
+
+.item-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: 0.02em;
+  color: #757575;
 }
 
 .header-section {
@@ -299,6 +329,12 @@ button {
   margin-right: 93px;
 }
 
+@media screen and (max-width: 768px) {
+  .header-logo {
+    margin-right: 88px;
+  }
+}
+
 .nav {
   display: flex;
   align-items: center;
@@ -317,7 +353,7 @@ button {
   display: flex;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .nav-site {
     display: none;
   }
@@ -386,9 +422,16 @@ button {
   margin-right: 50px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 480px) {
   .auth-nav {
     display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .auth-nav {
+    flex-direction: column;
+    margin-right: 15px;
   }
 }
 
@@ -403,11 +446,16 @@ button {
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  margin-right: 50px;
 }
 
 .auth-nav__list:hover {
   color: var(--primari-accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav__list {
+    margin-right: 50px;
+  }
 }
 
 .auth-nav__link {
@@ -1135,6 +1183,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 1600px;
 }
 
 @media screen and (min-width: 480px) {
@@ -1158,6 +1207,7 @@ button {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1191,6 +1241,7 @@ button {
   .footer-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
   }
 }
 
@@ -1200,7 +1251,6 @@ button {
     justify-content: center;
     align-items: flex-start;
     flex-direction: row;
-    margin-bottom: 60px;
   }
 }
 
@@ -1228,6 +1278,12 @@ button {
 @media screen and (min-width: 1200px) {
   .footer-link {
     margin-right: 93px;
+  }
+}
+
+@media screen and (man-width: 480px) {
+  .footer-link {
+    margin-bottom: 60px;
   }
 }
 

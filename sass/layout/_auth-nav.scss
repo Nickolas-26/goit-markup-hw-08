@@ -9,8 +9,12 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: 50px;
-    @media screen and ( min-width: 480px){
+    @media screen and ( max-width: 480px){
       display: none;
+    }
+    @media screen and ( max-width: 768px){
+      flex-direction: column;
+      margin-right: 15px;
     }
   }
   .auth-nav__icon {
@@ -24,10 +28,13 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    margin-right: 50px;
+    
     &:hover {
         color: var(--primari-accent-color);
       }    
+  @media screen and ( min-width: 1200px){
+    margin-right: 50px;
+  }
   }
   .auth-nav__link {
   font-family: Roboto;
