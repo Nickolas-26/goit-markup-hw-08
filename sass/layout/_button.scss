@@ -73,9 +73,22 @@
   
 //   ...............BUTTON-SECONDARY............
 .nav-class {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    @media screen and ( min-width: 480px){
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: flex-start;
+  }
+  @media screen and ( min-width: 768px){
+      margin-bottom: 14px;
+      display: flex;
+      justify-content: center;
+    }
+    @media screen and ( min-width: 1200px){
+      display: flex;
+      justify-content: center;
+      margin-bottom: 50px;
+    }
   }
 .button-secondary {
     padding: 6px 22px;
@@ -98,16 +111,7 @@
   background-color: var(--primari-accent-color);
   color: var(--primari-team-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    }
+    
 }
-  }
-   
-//   .btn {
-//     position: absolute;
-//     border: 1px solid rgba(0, 0, 0, 0.1);
-//     background-color: black;
-//     width: 15px;
-//     height: 15px;
-//     border-radius: 50%;
-//   }
-
   
