@@ -488,6 +488,8 @@ button {
 
 @media screen and (min-width: 768px) {
   .auth-nav__icon {
+    width: 14px;
+    height: 10px;
     margin-right: 8px;
   }
 }
@@ -1277,6 +1279,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 0;
   }
 }
 
@@ -1299,11 +1302,8 @@ button {
   }
 }
 
-@media screen and (min-widht: 1200px) {
+@media screen and (min-width: 1200px) {
   .footer-container {
-    display: flex;
-    flex-direction: row;
-    width: calc(100% / 3 - 30px);
     margin-bottom: 0;
   }
 }
@@ -1412,6 +1412,7 @@ button {
   .form-list {
     display: flex;
     flex-direction: row;
+    width: 570px;
   }
 }
 
@@ -1439,7 +1440,7 @@ button {
 
 .form__item {
   border: 1px solid rgba(255, 255, 255, 0.3);
-  width: 450px;
+  width: 100%;
   height: 50px;
   padding: 15px 16px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1451,13 +1452,20 @@ button {
 
 @media screen and (min-width: 1200px) {
   .form__item {
-    width: 358px;
+    width: 350px;
     margin-right: 12px;
     margin-bottom: 0;
   }
 }
 
+@media screen and (min-width: 768px) {
+  .form__item {
+    width: 450px;
+  }
+}
+
 .form__btn {
+  width: 200px;
   position: relative;
   padding-top: 10px;
   padding-bottom: 10px;
