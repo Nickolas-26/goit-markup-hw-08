@@ -1,6 +1,9 @@
 .nav {
     display: flex;
     align-items: center;
+    @media screen and ( min-width: 768px){
+      padding-right: 84px;
+    }
   }
   
   .nav-site__list {

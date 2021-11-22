@@ -2,7 +2,12 @@
     border-color: var(--primari-white-color);
     padding-top: 24px;
     padding-bottom: 25px;
+    @media screen and ( min-width: 768px){
+      padding-top: 21px;
+      padding-bottom: 21px;
+    }
   }
+
   .header-section-portfolio {
     border: 1px solid #ececec;
     padding-top: 24px;
