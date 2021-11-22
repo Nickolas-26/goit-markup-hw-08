@@ -596,13 +596,14 @@ button {
 
 @media screen and (min-width: 768px) {
   .hero-tittle {
-    max-width: 360px;
+    width: 360px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero-tittle {
     font-size: 44px;
+    width: 696px;
   }
 }
 
@@ -1123,10 +1124,6 @@ button {
   margin-bottom: 30px;
 }
 
-.team__list:last-child {
-  margin-bottom: 0;
-}
-
 @media screen and (min-width: 768px) {
   .team__list {
     width: 354px;
@@ -1150,6 +1147,20 @@ button {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primari-tittle-color);
+}
+
+@media screen and (min-width: 768px) {
+  .team__tittle {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .team__tittle {
+    margin-bottom: 30px;
+    font-size: 28px;
+  }
 }
 
 .team__name {
@@ -1344,10 +1355,12 @@ button {
 
 @media screen and (min-width: 1200px) {
   .footer-part {
+    width: 231px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 0;
+    margin-right: 70px;
   }
 }
 
@@ -1377,9 +1390,7 @@ button {
 }
 
 .adress-section {
-  display: flex;
-  flex-direction: row;
-  font-style: normal;
+  align-items: flex-start;
   margin-bottom: 8px;
   font-weight: 400;
   font-size: 14px;
@@ -1405,8 +1416,6 @@ button {
 
 .footer-item {
   display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -1414,6 +1423,12 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primari-white-color);
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-item {
+    justify-content: center;
+  }
 }
 
 .link {
