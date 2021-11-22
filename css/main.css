@@ -270,10 +270,22 @@ button {
   margin-bottom: 0;
 }
 
+.current {
+  color: #2196F3;
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
+}
+
+.menu-bottom-list {
+  margin-bottom: 64px;
+}
+
+.bottom-auth {
+  margin-bottom: 20px;
 }
 
 .auth-item {
@@ -282,7 +294,6 @@ button {
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #2196F3;
-  margin-bottom: 20px;
 }
 
 .item-mail {
@@ -291,6 +302,25 @@ button {
   line-height: 1.16;
   letter-spacing: 0.02em;
   color: #757575;
+}
+
+.menu-social-bottom {
+  display: flex;
+  margin-bottom: 48px;
+}
+
+.menu-social {
+  margin-right: 10px;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.menu-social:last-child {
+  border-right: 0;
+}
+
+.menu-social-link {
+  color: #2196F3;
 }
 
 .header-section {
@@ -347,12 +377,6 @@ button {
 .nav {
   display: flex;
   align-items: center;
-}
-
-@media screen and (min-width: 768px) {
-  .nav {
-    padding-right: 84px;
-  }
 }
 
 .nav-site__list {
@@ -498,6 +522,13 @@ button {
 
 .auth-nav__link:hover, .auth-nav__link:focus {
   color: var(--primari-accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .auth-nav__link {
+    display: flex;
+    font-size: 12px;
+  }
 }
 
 .hero {
@@ -1408,10 +1439,9 @@ button {
 
 .form__item {
   border: 1px solid rgba(255, 255, 255, 0.3);
-  width: 100%;
+  width: 450px;
   height: 50px;
   padding: 15px 16px;
-  margin-right: 12px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: white;
@@ -1423,6 +1453,7 @@ button {
   .form__item {
     width: 358px;
     margin-right: 12px;
+    margin-bottom: 0;
   }
 }
 
