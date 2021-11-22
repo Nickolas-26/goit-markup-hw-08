@@ -1,12 +1,12 @@
-
-.footer-section {
+.footer{
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--primari-hero-color);
+}
+.footer-section {
   display: flex;
   align-items:center;
   justify-content: center;
-  max-width: 1600px;
   @media screen and ( min-width: 480px){
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@
     flex-direction: row;
   }
 }
-.footer {
+.footer-part {
 display: flex;
 flex-direction: column;
 justify-content: center;
@@ -64,13 +64,11 @@ margin-bottom: 60px;
 }
 }
 .adress-section {
-  
   margin-bottom: 8px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   color: var(--primari-white-color);
-  
 }
 .link-item:not(:last-child) {
   margin-bottom: 8px;
@@ -110,7 +108,6 @@ margin-bottom: 60px;
   }
 }
 
-
 .link-footer {
   font-weight: 400;
   font-size: 14px;
@@ -125,13 +122,9 @@ margin-bottom: 60px;
     color: var(--primari-accent-color);
   }
 }
-
 .footer-icons {
   display: flex;
 }
-
-
-
 .footer__icon {
   width: 20px;
   height: 20px;
@@ -148,24 +141,15 @@ margin-bottom: 60px;
 }
 }
 
-
-
-// .........footer form..............
-// .form{
-//   display: flex;
-//  align-items: center;
-//  justify-content: center;
- 
-// }
 .form-list{
   display: flex;
   justify-content: center;
   align-items: center;
-  @media screen and (min-width: 480px){
-      display: flex;
-      flex-direction: column;
-    }
-  @media screen and (min-width: 768px){
+  // @media screen and (min-width: 480px){
+  //     display: flex;
+  //     flex-direction: column;
+  //   }
+  @media screen and (max-width: 768px){
       display: flex;
       flex-direction: column;
     }
@@ -176,19 +160,21 @@ margin-bottom: 60px;
 }
 .form__submit{
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
   margin-bottom: 20px;
   font-family: Roboto;
   font-style: normal;
   font-weight: 700;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.03em;
-text-transform: uppercase;
-color: white;
-
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: white;
+  @media screen and (max-width: 1199px){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
 
 }
 .form__item{
@@ -196,6 +182,7 @@ color: white;
   width: 450px;
   height: 50px;
   padding: 15px 16px;
+  margin-right: 12px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   color: white;

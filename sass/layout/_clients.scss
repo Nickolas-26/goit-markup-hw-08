@@ -34,7 +34,6 @@
     }
   
     .clients__list {
-    width:calc(100% / 2 - 30px);
     height: 92px;
     display: block;
     margin-right: 30px;
@@ -42,9 +41,9 @@
     &:last-child {
         margin-right: 0;
       }
-       @media screen and ( min-width: 320px){
-      width:calc(100% / 2 - 30px);
-       }
+      @media screen and ( max-width: 767px){
+        width:calc(100% / 2 - 30px);
+      }
       @media screen and ( min-width: 768px){
       width:calc(100% / 3 - 30px);
     }
