@@ -240,11 +240,17 @@ button {
 }
 
 .menu-toggle {
-  position: absolute;
+  margin-left: auto;
   right: 23px;
   top: 22px;
   border: none;
   background-color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 .menu-container {
